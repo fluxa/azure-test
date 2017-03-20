@@ -1,0 +1,15 @@
+extends ../layout
+block content
+    .container-fluid
+        h1 _id #{users_id}
+        table.table
+            th # Users
+            th createdAt
+            th RUT
+            th Mobile
+            th UpdateAt
+            tr(data-id="#{user._id}")
+                td #{moment(user.createdAt).format('HH:mm DD/MM/YYYY')}
+                td #{user.rut}
+                td #{user.mobile}
+                td #{moment(user.updatedAt).format('HH:mm DD/MM/YYYY')}

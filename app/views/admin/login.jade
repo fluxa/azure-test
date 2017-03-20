@@ -1,0 +1,31 @@
+doctype html
+html
+    head
+        title Admin Login
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0")
+        link(rel="shortcut icon" type="image/png" href="/images/favicon.png")
+        include ../../../public/build.html
+        block head
+    body.admin
+        main.container-fluid
+            .row
+                .col-md-6.col-md-offset-3
+                    .well
+                        form.form(action="/admin/login", method="post")
+                            fieldset
+                                legend Admin login
+                                .form-group
+                                    label.control-label(for='user') Username
+                                    input(name="user", id='user',type="text",placeholder="Username").form-control
+                                .form-group
+                                    label.control-label(for='password') Password
+                                    input(name="password", id='password', type="password").form-control
+
+                                .form-group
+                                    button(type='submit', value='Login').btn.btn-default Login
+
+    block scripts
+        script.
+            $(function () {
+                $.material.init();
+            });

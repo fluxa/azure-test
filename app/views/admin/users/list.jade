@@ -1,0 +1,22 @@
+extends ../layout
+block content
+    .container-fluid
+        h1 Users (#{users.length})
+        if users.length == 0
+            .alert.alert-info Hey, aún no hay nada por aquí
+        else
+            table.table
+                th # Users
+                th createdAt
+                th RUT
+                th Mobile
+                th UpdateAt
+                each user in users
+                    tr(data-id="#{user._id}")
+                        td #{moment(user.createdAt).format('HH:mm DD/MM/YYYY')}
+                        td #{user.rut}
+                        td #{user.mobile}
+                        td #{moment(user.updatedAt).format('HH:mm DD/MM/YYYY')}
+                        td 
+                            .btn-group
+                                a(href='/admin/uesrs/#{user._id}').btn.btn-primary Ver
