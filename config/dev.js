@@ -2,5 +2,5 @@
 
 module.exports = {
     port : process.env.PORT,
-    database : process.env.CUSTOM_CONNSTR_MONGODB_URI
+    database : process.env.CUSTOMCONNSTR_MONGODB_URI
 };
