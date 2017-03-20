@@ -1,5 +1,7 @@
 'use strict';
 
+var config = require('../../../config');
+
 module.exports = {
     view : function(req, res) {
         return res.render('admin/login.jade');

@@ -1,9 +1,9 @@
 'use strict';
 
-var environment   = process.env.NODE_ENV;
-var config        = {};
+var environment = process.env.APPSETTING_NODE_ENV;
+var config = {};
 
-config.common     = require('./common');
+config.common = require('./common');
 
 console.info('Starting in %s mode', environment);
 

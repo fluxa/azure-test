@@ -1,5 +1,6 @@
 'use strict';
 
 module.exports = {
-    database : process.env.MONGODB_URI
+    port : process.env.PORT,
+    database : process.env.CUSTOM_CONNSTR_MONGODB_URI
 };

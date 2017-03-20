@@ -1,8 +1,9 @@
 'use strict';
 
 module.exports = {
-    time_format: 'YYYY-MM-DD HH:mm:ss',
-    session_secret: 'asdaASasda3awe3A',
+    timeZone : 'America/Santiago',
+    timeFormat : 'YYYY-MM-DD HH:mm:ss',
+    sessionSecret : 'asdaASasda3awe3A',
     admin : {
         login : {
             user : process.env.ADMIN_USER || 'admin',
