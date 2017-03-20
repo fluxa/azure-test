@@ -13,7 +13,8 @@
   },
   "scripts": {
     "postinstall-dev": "./node_modules/bower/bin/bower install; grunt build;",
-    "start-dev": "grunt build-dev; ./node_modules/nodemon/bin/nodemon.js --watch app --watch config ./bin/server.js;"
+    "start-dev": "grunt build-dev; ./node_modules/nodemon/bin/nodemon.js --watch app --watch config ./bin/server.js;",
+    "start" : "node ./bin/server.js"
   },
   "dependencies": {
     "async": "^2.1.5",
