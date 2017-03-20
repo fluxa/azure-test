@@ -22,4 +22,6 @@ switch (environment) {
         break;
 }
 
-module.exports    = config;
+console.log(config);
+
+module.exports = config;
