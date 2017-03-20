@@ -6,8 +6,8 @@ module.exports = {
     sessionSecret : 'asdaASasda3awe3A',
     admin : {
         login : {
-            user : process.env.ADMIN_USER || 'admin',
-            password : process.env.ADMIN_PASS || 'admin'
+            user : process.env.APPSETTING_ADMIN_USER || 'admin',
+            password : process.env.APPSETTING_ADMIN_PASS || 'admin'
         }
     }
 };
